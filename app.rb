@@ -35,11 +35,11 @@ class App < Sinatra::Base
     if @operation == "add" 
       expression = "#{@number1.to_i + @number2.to_i}"
     elsif @operation == "subtract"
-      expression = @number1.to_i @operation @number2.to_i
+      expression = "#{@number1.to_i - @number2.to_i}"
     elsif @operation == "divide"
-      expression = @number1.to_i @operation @number2.to_i
+      expression = "#{@number1.to_i / @number2.to_i}"
     elsif @operation == "multiply"
-      expression = @number1.to_i @operation @number2.to_i
+      expression = "#{@number1.to_i * @number2.to_i}"
     end 
   end
 
